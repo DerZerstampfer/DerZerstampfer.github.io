@@ -1,6 +1,6 @@
 var mymap = L.map('mapid').setView([49.204217122198, 8.041906356811523], 13);
 
-if (localStorage.getItem('mapId') == '') {
+if (localStorage.getItem('mapId') == '' || !localStorage.getItem('mapId')) {
     localStorage.setItem('mapId', 'mapbox/dark-v10')
 }
 
