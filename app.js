@@ -20,9 +20,9 @@ var truckIcon = L.icon({
 L.marker([49.204217122198, 8.041909356811523], {icon: truckIcon}).addTo(mymap)
     .bindPopup("<b>Hello world!</b><br />I am a popup.");
 
-    addTruck([49.205833, 8.073772], "Bernd");
-    jens = addTruck([49.267789, 8.085611], "Jens");
-    addTruck([49.209403, 8.184875], "Bernd");
+    addTruck([49.205833, 8.073772], "Truck 1");
+    jens = addTruck([49.267789, 8.085611], "Truck 2");
+    addTruck([49.209403, 8.184875], "Truck 3");
     
     function onMapClick(e) {
         document.getElementById("geo").innerHTML = e.latlng;
